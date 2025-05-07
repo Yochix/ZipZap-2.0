@@ -1,6 +1,7 @@
 document.getElementById('cta-button').addEventListener('click', function() {
     alert('Prepare-se para explorar o mundo dos games!');
 });
+
 // Seleciona o cabeçalho
 const header = document.querySelector('.animated-header');
 
@@ -18,8 +19,8 @@ function createParticle() {
     // Remove a partícula depois de um tempo
     setTimeout(() => {
         particle.remove();
-    }, 8000); // Tempo de vida da partícula em ms
+    }, 8000);
 }
 
-// Cria partículas a cada intervalo de tempo
-setInterval(createParticle, 1000);
+// Exemplo de partículas sendo criadas continuamente
+setInterval(createParticle, 300);
